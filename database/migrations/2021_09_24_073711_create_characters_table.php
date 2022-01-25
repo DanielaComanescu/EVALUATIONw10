@@ -18,7 +18,7 @@ class CreateCharactersTable extends Migration
             $table->string('name');
             $table->integer('creationYear');
             $table->string('cartoonName');
-            $table->integer('designer_id');
+            $table->string('designer');
             $table->string('details');
             $table->timestamps();
         });

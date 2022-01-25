@@ -28,7 +28,7 @@
                 <td><a href="/infoCharacter/{{ $character->id }}">{{ $character->name }}</td>
                 <td>{{ $character->creationYear }}</td>
                 <td>{{ $character->cartoonName }}</td>
-                <td>{{ $character->designer->name }}</td>
+                <td>{{ $character->designer }}</td>
 
                 <td>
                     <form action="/delete" method="POST">
@@ -39,7 +39,7 @@
                     </form>
                 </td>   
 
-                <td><a href="/update/{{ $character->id }}" class="btn btn-primary"> Update</td>   
+                <td><a href="/update/{{ $character->id }}"> Update</td>   
             </tr>
 
             @endforeach

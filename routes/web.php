@@ -27,7 +27,7 @@ Route::post('/newCharacter', [ActionController::class, 'add']);
 Route::post('/delete', [ActionController::class, 'delete']);
 
 Route::get('/update/{id}', [NavController::class, 'updateCharacter']);
-Route::post('/updateForm', [ActionController::class, 'updateCharacter']);
+Route::post('/updateForm{id}', [ActionController::class, 'updateCharacter']);
 
 
 Route::get('/listDesigners', [NavController::class, 'listDesigners']);
@@ -38,5 +38,5 @@ Route::post('/newDesigner', [ActionController::class, 'addDesigner']);
 Route::post('/deleteDesigner', [ActionController::class, 'deleteDesigner']);
 
 Route::get('/updateDesigner/{id}', [NavController::class, 'updateDesigner']);
-Route::post('/updateFormDesigner', [ActionController::class, 'updateDesigner']);
+Route::post('/updateFormDesigner{id}', [ActionController::class, 'updateDesigner']);
 

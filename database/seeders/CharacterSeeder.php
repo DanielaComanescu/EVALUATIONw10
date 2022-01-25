@@ -19,7 +19,7 @@ class CharacterSeeder extends Seeder
                 'name' => 'Spider Man',
                 'creationYear' => 1980,
                 'cartoonName' => 'Marvel Comics',
-                'designer_id' => 1,
+                'designer' => 'Stan Lee',
                 'details' => 'Spider Man est un personnage des BD très connu au monde entier',
             ],
 
@@ -27,7 +27,7 @@ class CharacterSeeder extends Seeder
                 'name' => 'Asterix',
                 'creationYear' => 1961,
                 'cartoonName' => 'Asterix and Obelix',
-                'designer_id' => 1,
+                'designer' => 'Albert Udezo',
                 'details' => 'Asterix est un personnage des BD comics',
             ],
 
@@ -35,7 +35,7 @@ class CharacterSeeder extends Seeder
                 'name' => 'Les Sisters',
                 'creationYear' => 2006,
                 'cartoonName' => 'Bamboo',
-                'designer_id' => 2,
+                'designer' => 'Stan Lee',
                 'details' => 'Les est un personnage des BD pour les enfants et ados'
             ],
         ]);

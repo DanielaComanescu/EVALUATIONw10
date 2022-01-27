@@ -28,16 +28,14 @@
                 <td>{{ $designer->birthYear }}</td>
                 <td>{{ $designer->nationality }}</td>
 
-                <td>
-                    <form action="/deleteDesigner" method="POST">
+                <td><div class="btn">
+                    <form action="/deleteDesigner/{{ $designer->id }}" method="POST">
                     @csrf
-          
-                        <input type="hidden" name="id" value="{{ $designer->id }}">
-                        <input type="submit" value="delete">
+                        <button type="submit" class="btn btn-primary"> Delete</button>
                     </form>
-                </td>   
+                </td></div>  
 
-                <td><a href="/updateDesigner/{{ $designer->id }}" class="btn btn-primary"> Update</td>   
+                <td><div class="btn"><a href="/modifierDesigner/{{ $designer->id }}"> Update</div></td>   
             </tr>
 
             @endforeach

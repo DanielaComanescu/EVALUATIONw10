@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\NavController;
 use App\Http\Controllers\ActionController;
+use App\Http\Controllers\DesignerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,19 +25,19 @@ Route::get('/infoCharacter/{id}', [NavController::class, 'details']);
 Route::get('/addCharacter', [NavController::class, 'add']);
 Route::post('/newCharacter', [ActionController::class, 'add']);
 
-Route::post('/delete', [ActionController::class, 'delete']);
+Route::post('/delete/{id}', [ActionController::class, 'delete']);
 
 Route::get('/update/{id}', [NavController::class, 'updateCharacter']);
 Route::post('/updateForm{id}', [ActionController::class, 'updateCharacter']);
 
 
-Route::get('/listDesigners', [NavController::class, 'listDesigners']);
+Route::get('/listDesigners', [DesignerController::class, 'listDesigners']);
 
-Route::get('/addDesigner', [NavController::class, 'addDesigner']);
-Route::post('/newDesigner', [ActionController::class, 'addDesigner']);
+Route::get('/addDesigner', [DesignerController::class, 'addDesigner']);
+Route::post('/newDesigner', [DesignerController::class, 'ajouterDesigner']);
 
-Route::post('/deleteDesigner', [ActionController::class, 'deleteDesigner']);
+Route::post('/deleteDesigner/{id}', [DesignerController::class, 'deleteDesigner']);
 
-Route::get('/updateDesigner/{id}', [NavController::class, 'updateDesigner']);
-Route::post('/updateFormDesigner{id}', [ActionController::class, 'updateDesigner']);
+Route::get('/modifierDesigner/{id}', [DesignerController::class, 'updateDesigner']);
+Route::post('/modifDesigner{id}', [DesignerController::class, 'upDesigner']);
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Character;
-use App\Models\Designer;
+
 
 class NavController extends Controller
 {
@@ -34,19 +34,5 @@ class NavController extends Controller
         return view('updateForm', ['character' => $character]);
     }
 
-    public function listDesigners() {
-        $designers = Designer::all();
-        return view('listDesigners', ['designers' => $designers]);
-    }
-
-    public function addDesigner() {
-        
-        return view('addDesigner');
-    }
-
-    public function updateDesigner($id) {
-        $designer = Designer:: findOrFail($id);
-
-        return view('updateFormDesigner', ['designer' => $designer]);
-    }
+   
 }

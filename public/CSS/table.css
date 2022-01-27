@@ -1,6 +1,6 @@
 table {
     table-layout: fixed;
-    width: 60%;
+    width: 70%;
     border-collapse: collapse;
     border: 3px solid blueviolet;
 }
@@ -8,3 +8,28 @@ table {
 th, td {
     padding: 50px;
 }
+
+.btn {
+    width: 65px;
+    height: 30px;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    color: black;
+}
+
+.btn a{
+    text-decoration: none; /* Supprimer le soulignage du lien */
+    color: black;
+   
+}
+
+.btn:hover {
+    background-color: #a2a434;
+}
+
+a {
+    color: darkblue; 
+   
+ }

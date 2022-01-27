@@ -32,7 +32,9 @@
             <input type="text" id="details" name="details" value="{{ $character->details }}"></div>
         <br>
 
-        <button type="submit" class="btn btn-primary"> Update </button>
+        <div class="btn">
+            <button type="submit" class="btn btn-primary"> Update </button>
+        </div>
 
     </form>
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Character;
-use App\Models\Designer;
+
 
 class ActionController extends Controller
 {
@@ -41,32 +41,5 @@ class ActionController extends Controller
         return redirect('/list');
     }
 
-    public function addDesigner(Request $request)  {
-        $designer = new Designer;
-
-        $designer->name = $request->name;
-        $designer->birthYear = $request->birthYear;
-        $designer->nationality = $request->nationality;
-
-        $designer->save();
-        return redirect('/listDesigners');
-    }
-
-    public function deleteDesigner(Request $request) {
-        $designer = Designer::find($request->id);
-
-        $designer->delete();
-        return redirect('/listDesigners');
-    }
-
-    public function updateDesigner(Request $request) {
-        $designer = Designer::find($request->id);
-
-        $designer->name = $request->name;
-        $designer->birthYear = $request->birthYear;
-        $designer->nationality = $request->nationality;
-
-        $designer->save();
-        return redirect('/listDesigners');
-    }
+    
 }

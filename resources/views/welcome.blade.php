@@ -1,6 +1,7 @@
 @extends('layouts.base')
 
 @section('title', 'Accueil')
+@section('css', 'table')
 
 @section('content')
 

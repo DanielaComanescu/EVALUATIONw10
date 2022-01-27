@@ -29,3 +29,8 @@ h1 {
     color: blueviolet;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+a {
+    color: darkblue; 
+    text-decoration: none;
+ }

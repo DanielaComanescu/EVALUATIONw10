@@ -30,16 +30,14 @@
                 <td>{{ $character->cartoonName }}</td>
                 <td>{{ $character->designer }}</td>
 
-                <td>
-                    <form action="/delete" method="POST">
+                <td><div class="btn">
+                    <form action="/delete/{{ $character->id }}" method="POST">
                     @csrf
-          
-                        <input type="hidden" name="id" value="{{ $character->id }}">
-                        <input type="submit" value="delete">
+                        <button type="submit" class="btn btn-primary"> Delete</button>
                     </form>
-                </td>   
+                </td></div>  
 
-                <td><a href="/update/{{ $character->id }}"> Update</td>   
+                <td><div class="btn"><a href="/update/{{ $character->id }}"> Update</div></td> 
             </tr>
 
             @endforeach

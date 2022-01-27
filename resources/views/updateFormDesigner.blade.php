@@ -7,8 +7,9 @@
 
 <h2>Ajoutez un nouveau artist en remplissant ce formulaire</h2>
 
-    <form action="/updateFormDesigner{{ $designer->id }}" method="POST">
+    <form action="/modifDesigner{{ $designer->id }}" method="POST">
     @csrf 
+    
         <br>
 
         <div> <label for="name">Name Update :</label>

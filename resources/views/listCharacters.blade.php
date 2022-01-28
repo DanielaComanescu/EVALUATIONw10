@@ -7,6 +7,7 @@
 
     <h1>Liste bandes dessinées disponibles</h1>
 
+    <div class="table-responsive">
     <table>
         <thread>
             <tr>
@@ -43,5 +44,6 @@
             @endforeach
         </tbody>
     </table>
+    </div>
 
 @endsection

@@ -1,13 +1,27 @@
-table {
-    table-layout: fixed;
-    width: 70%;
-    border-collapse: collapse;
-    border: 3px solid blueviolet;
+.table-responsive {
+    min-height: .01%;
+    overflow-x: auto;
 }
 
-th, td {
-    padding: 50px;
+@media all and (max-width: 470px) {
+    .table-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
+    }
+
+    .table-responsive > .table {
+        margin-bottom: 0;
+    }
 }
+
+
+th, td {
+    padding: 20px;
+}
+
 
 .btn {
     width: 65px;
@@ -22,7 +36,6 @@ th, td {
 .btn a{
     text-decoration: none; /* Supprimer le soulignage du lien */
     color: black;
-   
 }
 
 .btn:hover {
@@ -31,5 +44,4 @@ th, td {
 
 a {
     color: darkblue; 
-   
  }
